@@ -1,12 +1,10 @@
 
-![313-314_Page_1 jpg 3](https://github.com/user-attachments/assets/85352a8e-6009-4ea1-8b5e-a5139f5e6a89)                           ![12 jpg-](https://github.com/user-attachments/assets/96401677-5a5d-4a7e-bcfb-f4305f329d2d)
+![313-314_Page_1 jpg 3](https://github.com/user-attachments/assets/85352a8e-6009-4ea1-8b5e-a5139f5e6a89)                           ![12 jpg-](https://github.com/user-attachments/assets/96401677-5a5d-4a7e-bcfb-f4305f329d2d) 
 
+**Dedicated to the memory of the Greek Philosopher Εpameinondas Xenopoulos (1920–1994), my father.**
 
-
-
-
-markdown
-
+**Author:** Epameinondas Xenopoulos  
+**ORCID:** https://orcid.org/0009-0000-1736-8555
 
 ---
 
@@ -15,7 +13,7 @@ markdown
 This repository contains the Xenopoulos Revelation: Dialectical Logic Exposes Computational Paradoxes, a model derived from the dialectical system of the Xenopoulos Genetic-Historical Logic System, developed by the Greek philosopher Epameinondas Xenopoulos in his treatise Epistemology of Logic: Logic–Dialectic or Theory of Knowledge (1998,2nd 2024)
 https://github.com/kxenopoulou/epistemology-of-logic
 
-**By Katerina Xenopoulou | AI-Assisted Implementation | January 31, 2026**
+**By Katerina Xenopoulou | AI-Assisted Implementation | January 31, 2026** https://orcid.org/0009-0004-9057-7432
 
 ---
 
