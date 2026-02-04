@@ -4,7 +4,7 @@
 📋 EXPERIMENT SUMMARY
 Experiment: Dialectical analysis of LSTM denoising model using Xenopoulos System
 Execution Time: 4-7 minutes (Google Colab T4 GPU)
-Execution Date: $(date '+%Y-%m-%d %H:%M:%S')
+Execution Date: 04-02-2026
 Experiment ID: XLD-2024-EXP-001
 
 📈 NUMERICAL RESULTS
@@ -377,7 +377,8 @@ RESEARCH_AGENDA = {
 }
 📚 REFERENCES
 Theoretical Framework
-Xenopoulos, G. (1998). Genetic-Historical System of Logic. Athens: Gnosis Publications.
+Xenopoulos, E. (1998,2nd 2024). Epistemology of Logic, Logic-Dialectic or Theory of Knowledge.
+https://www.researchgate.net/publication/359717578_Epistemology_of_Logic_Logic-Dialectic_or_Theory_of_Knowledge
 
 Hegel, G. W. F. (1812). Science of Logic. Nuremberg.
 
@@ -512,8 +513,8 @@ If you use this work, please cite:
 bibtex
 @software{xenolstm2024,
   title = {XenoLSTM-ParadoxDetector: Dialectical Analysis of LSTM Models},
-  author = {[Your Name]},
-  year = {2024},
+  author = {Katerina Xenopoulou},
+  year = {2026},
   publisher = {GitHub},
   journal = {GitHub repository},
   howpublished = {\url{https://github.com/[username]/XenoLSTM-ParadoxDetector}},
