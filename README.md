@@ -1,7 +1,7 @@
 
-![313-314_Page_1 jpg 3](https://github.com/user-attachments/assets/85352a8e-6009-4ea1-8b5e-a5139f5e6a89)                           ![12 jpg-](https://github.com/user-attachments/assets/96401677-5a5d-4a7e-bcfb-f4305f329d2d) 
+![313-314_Page_1 jpg 3](https://github.com/user-attachments/assets/85352a8e-6009-4ea1-8b5e-a5139f5e6a89)                           ![12 jpg-](https://github.com/user-attachments/assets/96401677-5a5d-4a7e-bcfb-f4305f329d2d) ISBN 978‑618‑87332‑0‑6
 
-markdown
+
 # Dedicated to the Memory of the Greek Philosopher  
 # Epameinondas Xenopoulos (1920–1994), My Father
 ---
@@ -208,6 +208,30 @@ text
 Stability, as traditionally understood, may be our greatest epistemological illusion in complex systems analysis.
 
 ---
+
+## References
+
+[1] Amodei, D., Olah, C., Steinhardt, J., Christiano, P., Schulman, J., & Mané, D. (2016).  
+*Concrete Problems in AI Safety*. arXiv preprint arXiv:1606.06565.
+
+[2] Hochreiter, S., & Schmidhuber, J. (1997).  
+*Long short-term memory*. Neural Computation, 9(8), 1735–1780.
+
+[3] Ribeiro, M. T., Singh, S., & Guestrin, C. (2016).  
+*"Why should I trust you?" Explaining the predictions of any classifier*.  
+In *Proceedings of the 22nd ACM SIGKDD International Conference on Knowledge Discovery and Data Mining* (pp. 1135–1144).
+
+[4] Vaswani, A., Shazeer, N., Parmar, N., Uszkoreit, J., Jones, L., Gomez, A. N., … Polosukhin, I. (2017).  
+*Attention is all you need*. Advances in Neural Information Processing Systems, 30.
+
+[5] Xenopoulos, E. (1998).  
+*Epistemology of Logic – Logic‑Dialectic or Theory of Knowledge* (1st ed.).  
+Aristotle Editions. ISBN 960‑90845‑0‑8.
+
+[6] Xenopoulos, E. (2024).  
+*Epistemology of Logic – Logic‑Dialectic or Theory of Knowledge* (2nd ed.).  
+Aristotle Editions. ISBN 978‑618‑87332‑0‑6.  
+DOI: 10.5281/zenodo.15846935
 
 ### Contact
 
