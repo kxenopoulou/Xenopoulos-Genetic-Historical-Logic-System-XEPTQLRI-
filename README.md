@@ -3,7 +3,12 @@
 
 **Dedicated to the memory of the Greek Philosopher Εpameinondas Xenopoulos (1920–1994), my father.**
 
-**Author:** Epameinondas Xenopoulos  
+**Author:** Katerina Xenopoulou (Implementation & Experimental Analysis)
+
+**ORCID:**  https://orcid.org/0009-0004-9057-7432
+
+Epameinondas Xenopoulos (Theoretical Framework)
+
 **ORCID:** https://orcid.org/0009-0000-1736-8555
 
 ---
