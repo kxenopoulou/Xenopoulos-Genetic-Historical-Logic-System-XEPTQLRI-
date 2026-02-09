@@ -143,8 +143,6 @@ The Xenopoulos System introduces a **10-stage classification** of dialectical st
 
 ### 6.1 Financial Crisis Prediction
 
-Applying the system to 2007-2008 market data:
-
 ```python
 # Analysis of stock market pre-Lehman collapse
 financial_system = XenopoulosSystem(
@@ -158,8 +156,11 @@ financial_system = XenopoulosSystem(
 # • Confidence (A) → 0.92
 # • Anti-Confidence (¬A) → -0.88  
 # • XEPTQLRI → 0.42 (low, misleading)
-6.2 AI System Monitoring
-python
+```
+
+### 6.2 AI System Monitoring
+
+```python
 class AISystemMonitor:
     def detect_semantic_drift(self, ai_system):
         semantic_state = self._extract_semantic_state(ai_system)
@@ -168,37 +169,46 @@ class AISystemMonitor:
         
         if self.xenopoulos.detect_paradoxical_transcendence(A, ¬A):
             return "WARNING: AI system in paradoxical semantic state"
-7. Repository Structure
-text
+```
+
+---
+
+### 7. Repository Structure
 xenopoulos-paradox-detection/
-├── docs/         # Documentation
-├── src/          # Source code
-├── tests/        # Tests
-├── examples/     # Usage examples
-├── data/         # Test data
-├── notebooks/    # Jupyter notebooks
-├── scripts/      # CLI scripts
-├── config/       # Configuration
-└── benchmarks/   # Performance evaluation
-8. Future Research Directions
-8.1 Immediate Priorities
-Empirical Validation
+├── docs/ # Documentation
+├── src/ # Source code
+├── tests/ # Tests
+├── examples/ # Usage examples
+├── data/ # Test data
+├── notebooks/ # Jupyter notebooks
+├── scripts/ # CLI scripts
+├── config/ # Configuration
+└── benchmarks/ # Performance evaluation
 
-Algorithm Optimization for real-time XEPTQLRI computation
+text
 
-8.2 Theoretical Expansion
-Paradoxical Economics
+---
 
-AI Consciousness
+### 8. Future Research Directions
 
-Evolutionary Computation
+#### 8.1 Immediate Priorities
+* Empirical Validation
+* Algorithm Optimization for real-time XEPTQLRI computation
 
-9. Conclusions
+#### 8.2 Theoretical Expansion
+* Paradoxical Economics
+* AI Consciousness
+* Evolutionary Computation
+
+---
+
+### 9. Conclusions
+
 Stability, as traditionally understood, may be our greatest epistemological illusion in complex systems analysis.
 
-Contact
+---
+
+### Contact
+
 For inquiries, please contact: katerinaxenopoulou@gmail.com
-
-
-
 
