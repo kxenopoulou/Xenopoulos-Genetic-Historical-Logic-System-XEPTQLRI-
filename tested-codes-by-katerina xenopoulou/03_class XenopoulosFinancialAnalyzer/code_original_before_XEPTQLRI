@@ -1,0 +1,239 @@
+class ImprovedBankingStateMachine:
+    def __init__(self):
+        self.states = {
+            'αNSη': self._alpha_state_handler,
+            'μNSσ': self._mu_state_handler, 
+            'τNSη': self._tau_state_handler,
+            'δNSγ': self._delinquency_handler,  # Νέα κατάσταση
+            'ωNSρ': self._overdue_handler       # Νέα κατάσταση
+        }
+        self.current_state = 'αNSη'
+        self.transaction_history = []
+    
+    def _alpha_state_handler(self, transaction):
+        """Βελτιωμένη αρχική επεξεργασία με ιστορικό έλεγχο"""
+        if self._has_delinquency_history(transaction.account_id):
+            self._update_state('δNSγ')
+            return self._delinquency_handler(transaction)
+        
+        if self._has_irregular_payment_pattern(transaction.account_id):
+            self._flag_for_review(transaction)
+        
+        return self._basic_validation(transaction)
+    
+    def _delinquency_handler(self, transaction):
+        """Κατάσταση διαχείρισης καθυστερήσεων"""
+        if self._detect_compound_interest_risk(transaction):
+            self._trigger_compound_interest_alert(transaction)
+        
+        if self._exceeds_delay_fee_limit(transaction.account_id):
+            self._initiate_fee_waiver_process(transaction)
+        
+        return self._process_delinquent_transaction(transaction)
+    
+    def _tau_state_handler(self, transaction):
+        """Κατάσταση ολοκλήρωσης"""
+        self.transaction_history.append(transaction)
+        return True
+2. Ανίχνευση Απάτης (fraud_detector_advanced.py)
+python
+
+
+
+View all
+class AdvancedFraudDetector:
+    def __init__(self):
+        self.ml_model = self._load_ml_model()
+        self.patterns = self._load_fraud_patterns()
+        self.anomaly_detector = AnomalyDetector()
+    
+    def detect_fraud(self, transaction):
+        """Συνδυασμένος έλεγχος απάτης"""
+        checks = [
+            self._check_ml_patterns(transaction),
+            self._check_behavioral_anomalies(transaction),
+            self._check_time_patterns(transaction),
+            self._check_geolocation(transaction),
+            self._check_amount_anomalies(transaction)
+        ]
+        
+        return any(checks)
+    
+    def _load_ml_model(self):
+        """Φόρτωση trained ML model"""
+        return load_model('models/fraud_detection_v3.h5')
+3. Ενισχυμένος Έλεγχος Συμμόρφωσης (compliance_checker_advanced.py)
+python
+
+
+class EnhancedComplianceChecker:
+    def __init__(self):
+        self.regulatory_rules = RegulatoryRulesDatabase()
+        self.audit_logger = EnhancedAuditLogger()
+    
+    def check_interest_rate_compliance(self, transaction):
+        """Έλεγχος επιτοκίων"""
+        if self._has_sudden_rate_increase(transaction):
+            return self._validate_rate_change_compliance(transaction)
+        
+        if self._exceeds_overdue_interest_limit(transaction):
+            return self._flag_regulatory_issue(transaction)
+        
+        return True
+4. Εντοπισμός Σύνθετων Τόκων (compound_detector.py)
+python
+
+
+
+View all
+class CompoundInterestDetector:
+    def __init__(self):
+        self.historical_data = HistoricalDataManager()
+        self.risk_thresholds = {
+            'compound_interest_risk': 0.7,
+            'delinquency_pattern': 0.6,
+            'fee_accumulation': 0.8
+        }
+    
+    def detect_compound_risk(self, transaction):
+        """Εντοπισμός κινδύνου σύνθετων τόκων"""
+        account_history = self._get_account_history(transaction.account_id)
+        
+        risk_factors = {
+            'interest_on_interest': self._check_interest_on_interest(account_history),
+            'increasing_balance_despite_payments': self._check_balance_growth(account_history),
+            'multiple_fee_types': self._check_multiple_fees(account_history),
+            'rate_change_frequency': self._check_rate_changes(account_history)
+        }
+        
+        risk_score = sum(risk_factors.values()) / len(risk_factors)
+        return risk_score > self.risk_thresholds['compound_interest_risk']
+5. Βάση Δεδομένων (database_schema.sql)
+sql
+
+CREATE TABLE banking_transactions (
+    id SERIAL PRIMARY KEY,
+    account_id VARCHAR(50) NOT NULL,
+    transaction_date DATE NOT NULL,
+    charge_amount DECIMAL(15,2),
+    credit_amount DECIMAL(15,2),
+    balance DECIMAL(15,2) NOT NULL,
+    interest_rate DECIMAL(5,2),
+    reason TEXT,
+    comments TEXT,
+    compound_interest_risk_score DECIMAL(5,2) DEFAULT 0.0,
+    delinquency_pattern_score DECIMAL(5,2) DEFAULT 0.0,
+    fee_accumulation_count INTEGER DEFAULT 0,
+    interest_rate_change_count INTEGER DEFAULT 0,
+    regulatory_compliance_status VARCHAR(20) DEFAULT 'PENDING',
+    last_risk_assessment TIMESTAMP,
+    payment_pattern_consistency DECIMAL(4,3) DEFAULT 0.0
+);
+
+CREATE INDEX idx_account_id ON banking_transactions(account_id);
+CREATE INDEX idx_transaction_date ON banking_transactions(transaction_date);
+CREATE INDEX idx_interest_rate ON banking_transactions(interest_rate);
+6. Ρυθμίσεις (config.yaml)
+yaml
+
+regulations:
+  max_interest_rate: 11.35
+  max_allowed_rate_change: 2.0
+  max_delay_fees_per_year: 200.00
+  compound_interest_allowed: false
+
+risk_thresholds:
+  compound_interest_risk: 0.7
+  delinquency_pattern: 0.6
+  fee_accumulation: 0.8
+  compliance_violation: 0.9
+
+database:
+  host: localhost
+  port: 5432
+  name: banking_monitor
+  user: banking_user
+  password: secure_password
+
+api:
+  port: 8000
+  debug: false
+  log_level: INFO
+7. Εγκατάσταση και Εκτέλεση (install.sh)
+bash
+
+#!/bin/bash
+
+echo "Εγκατάσταση Python dependencies..."
+pip install -r requirements.txt
+
+echo "Δημιουργία βάσης δεδομένων..."
+createdb banking_monitor
+
+echo "Εκτέλεση database migrations..."
+python manage.py migrate
+
+echo "Έναρξη server..."
+python manage.py runserver
+8. Test Suite (test_banking_system.py)
+python
+
+
+
+View all
+import unittest
+from state_machine_improved import ImprovedBankingStateMachine
+
+class TestBankingSystem(unittest.TestCase):
+    
+    def setUp(self):
+        self.state_machine = ImprovedBankingStateMachine()
+    
+    def test_compound_interest_detection(self):
+        test_transaction = {
+            'account_id': 'test_account',
+            'amount': 1000.00,
+            'interest_rate': 11.35,
+            'previous_balance': 50000.00,
+            'new_balance': 51000.00
+        }
+        result = self.state_machine._detect_compound_interest_risk(test_transaction)
+        self.assertTrue(result)
+
+if __name__ == '__main__':
+    unittest.main()
+9. Δείγματα Δεδομένων (sample_data.json)
+json
+
+{
+  "transactions": [
+    {
+      "date": "2012-03-09",
+      "charge": 10.00,
+      "credit": null,
+      "balance": 61968.74,
+      "interest_rate": 8.85,
+      "reason": "Έξοδα καθυστέρησης"
+    },
+    {
+      "date": "2012-03-12",
+      "charge": 15.00,
+      "credit": null,
+      "balance": 61983.74,
+      "interest_rate": 8.85,
+      "reason": "Έξοδα καθυστέρησης"
+    }
+  ]
+}
+💾 ΠΩΣ ΝΑ ΤΟ ΑΠΟΘΗΚΕΥΣΕΙΣ
+
+Δημιούργησε έναν φάκελο ΜΟΝΤΕΛΟ_ΞΕΝΟΠΟΥΛΟΥ.
+Αντέγραψε όλα τα παραπάνω αρχεία στον φάκελο.
+Βεβαιώσου ότι έχεις εγκαταστήσει Python 3.9+ και PostgreSQL.
+Εκτέλεσε το install.sh για να ξεκινήσεις το σύστημα.
+ΕΙΜΑΣΤΕ ΕΤΟΙΜΟΙ! 🚀
+
+Θέλεις βοήθεια με την εγκατάσταση; 😊
+
+4:43 PM
+This chat has exceeded GPT-4o's maximum context window. The oldest messages will be left out.
