@@ -239,6 +239,11 @@ For inquiries, please contact: katerinaxenopoulou@gmail.com
 
 ## 📊 Case Studies
 
+This repository contains two independent codebases:
+
+notebook/ – Generates the τ-system dialectical stages from raw COVID-19 data.
+
+case-studies/covid19-early-warning/ – Evaluates the τ-system as an Early Warning System using the generated CSV.
 ### 🦠 COVID-19 Early Warning System (Greece, 2020-2023)
 **First quantitative validation of the τ-system as an early warning predictor.**
 
