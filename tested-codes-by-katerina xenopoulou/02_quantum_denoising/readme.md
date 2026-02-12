@@ -1,5 +1,4 @@
 ```
-
 quantum_denoising_project/
 │
 ├── 📄 original_quantum_denoiser.py
@@ -13,4 +12,5 @@ quantum_denoising_project/
 ├── 📄 optimized_quantum_denoiser.py
 │   └── final_quantum_denoiser.h5
 │
-└── 📄 README.md```
+└── 📄 README.md
+```
