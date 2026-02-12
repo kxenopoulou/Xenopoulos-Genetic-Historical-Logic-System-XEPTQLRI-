@@ -1,0 +1,15 @@
+text
+quantum_denoising_project/
+│
+├── 📄 original_quantum_denoiser.py       # Βήμα 1
+│   └── original_model.h5
+│
+├── 📓 xenoparadox_analysis.ipynb         # Βήμα 2 (Colab)
+│   ├── analysis_results.json
+│   ├── xenopoulos_dashboard_*.png
+│   └── recommendations.txt
+│
+├── 📄 optimized_quantum_denoiser.py      # Βήμα 3
+│   └── final_quantum_denoiser.h5
+│
+└── 📄 README.md
