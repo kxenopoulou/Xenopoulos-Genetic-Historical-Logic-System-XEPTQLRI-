@@ -175,10 +175,18 @@ class AISystemMonitor:
 ---
 ```
 ### 7. Repository Structure
+
+### 7. Repository Structure
+
 xenopoulos_dialectical-paradoxes-XEPTQLRI/
 ├── docs/
+│   └── case_studies/
+│       ├── thermal.md
+│       ├── denoising.md
+│       ├── financial.md
+│       └── covid19.md
+├── experimental_validation/
 ├── src/
-├── tested-codes-by-katerina xenopoulou/
 ├── .gitignore
 ├── README_THEORY.md
 ├── requirements.txt
