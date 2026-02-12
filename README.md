@@ -235,18 +235,5 @@ DOI: 10.5281/zenodo.15846935
 
 For inquiries, please contact: katerinaxenopoulou@gmail.com
 
-## 📊 Case Studies
 
-This repository contains two independent codebases:
 
-notebook/ – Generates the τ-system dialectical stages from raw COVID-19 data.
-
-case-studies/covid19-early-warning/ – Evaluates the τ-system as an Early Warning System using the generated CSV.
-### 🦠 COVID-19 Early Warning System (Greece, 2020-2023)
-**First quantitative validation of the τ-system as an early warning predictor.**
-
-[▶️ Open Case Study](case-studies/covid19-early-warning/)
-
-Key finding: **4/5 major waves predicted, avg. 140 days lead time**.
-[📄 Read full evaluation (EN)](case-studies/covid19-early-warning/reports/xenopoulos_covid19_early_warning_system_evaluation_en.pdf)
-[📄 Πλήρης αξιολόγηση (EL)](case-studies/covid19-early-warning/reports/xenopoulos_covid19_early_warning_system_evaluation_el.pdf)
