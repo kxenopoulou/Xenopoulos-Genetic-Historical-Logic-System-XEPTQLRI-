@@ -141,7 +141,7 @@ The Xenopoulos System introduces a **10-stage classification** of dialectical st
 ---
 
 ## 6. Practical Applications
-
+---
 ### 6.1 Financial Crisis Prediction
 
 ```python
@@ -158,7 +158,7 @@ financial_system = XenopoulosSystem(
 # • Anti-Confidence (¬A) → -0.88  
 # • XEPTQLRI → 0.42 (low, misleading)
 ```
-
+```
 ### 6.2 AI System Monitoring
 
 ```python
@@ -173,7 +173,7 @@ class AISystemMonitor:
 ```
 
 ---
-
+```
 ### 7. Repository Structure
 xenopoulos-paradox-detection/
 ├── docs/ # Documentation
@@ -185,7 +185,7 @@ xenopoulos-paradox-detection/
 ├── scripts/ # CLI scripts
 ├── config/ # Configuration
 └── benchmarks/ # Performance evaluation
-
+```
 text
 
 ---
