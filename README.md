@@ -102,7 +102,7 @@ XEPTQLRI = (Dialectical_Tension × Historical_Trend × Paradox_Factor) / Aufhebu
 | False Stability | ⚠️ XEPTQLRI < 0.5 AND (|A|>0.8 and |¬A|>0.8) |
 
 ---
-
+```
 ## 📂 Repository Structure
 
 
@@ -138,7 +138,7 @@ XEPTQLRI = (Dialectical_Tension × Historical_Trend × Paradox_Factor) / Aufhebu
 │
 └── config/
 └── Configuration files
-
+```
 
 
 ## 🔬 Case Studies & Empirical Validation
@@ -175,7 +175,7 @@ The system is ideal for analyzing inherently dialectical architectures:
 | Adversarial Robustness | Normal operation | Adversarial input | False stability detection |
 | Attention Mechanisms | What to attend | What to ignore | Dialectical attention analysis |
 
-
+```
 ## 📜 Citation
 
 If you use this work, please cite it as:
@@ -189,6 +189,7 @@ If you use this work, please cite it as:
   doi       = {10.5281/zenodo.18545830},
   url       = {https://github.com/kxenopoulou/xenopoulos_dialectical-paradoxes-XEPTQLRI}
 }
+```
 
   ## 📄 License
 
