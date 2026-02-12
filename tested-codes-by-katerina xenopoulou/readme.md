@@ -1,6 +1,3 @@
-
-Ακολουθεί το πλήρως διορθωμένο README, βασισμένο αποκλειστικά στον πραγματικό κώδικα:
-
 🧬 The Xenopoulos System: Dialectical Logic & Detection of Computational Paradoxes (XEPTQLRI)
 https://img.shields.io/badge/License-CC%2520BY--NC%25204.0-lightgrey.svg
 https://zenodo.org/badge/DOI/10.5281/zenodo.18545830.svg
