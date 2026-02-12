@@ -1,3 +1,5 @@
+
+English Version
 ---
 
 # 🧬 The Xenopoulos System: Dialectical Logic & Detection of Computational Paradoxes (XEPTQLRI)
@@ -268,8 +270,8 @@ Epameinondas Xenopoulos (1920–1994)
 
 ---
 
-EL
-
+Greek Version
+---
 # 🧬 Το Σύστημα Ξενόπουλου: Διαλεκτική Λογική & Ανίχνευση Υπολογιστικών Παραδόξων (XEPTQLRI)
 
 [License](https://img.shields.io/badge/License-CC%20BY--NC%204.0-lightgrey.svg)  
