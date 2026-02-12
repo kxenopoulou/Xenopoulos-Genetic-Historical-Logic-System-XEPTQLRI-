@@ -175,16 +175,14 @@ class AISystemMonitor:
 ---
 ```
 ### 7. Repository Structure
-xenopoulos-paradox-detection/
-├── docs/ # Documentation
-├── src/ # Source code
-├── tests/ # Tests
-├── examples/ # Usage examples
-├── data/ # Test data
-├── notebooks/ # Jupyter notebooks
-├── scripts/ # CLI scripts
-├── config/ # Configuration
-└── benchmarks/ # Performance evaluation
+xenopoulos_dialectical-paradoxes-XEPTQLRI/
+├── docs/
+├── src/
+├── tested-codes-by-katerina xenopoulou/
+├── .gitignore
+├── README_THEORY.md
+├── requirements.txt
+└── xenopoulos_system.py
 ```
 text
 
